@@ -16,8 +16,7 @@ export async function register(req, res) {
         $or: [
             { username },
             { email }
-        ]
-    })
+        ]})
 
     if (isAlreadyRegistered) {
         res.status(409).json({

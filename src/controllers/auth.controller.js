@@ -7,7 +7,6 @@ import { sendEmail } from "../services/email.service.js";
 import { generateOtp, getOtpHtml } from "../utils/utils.js";
 import otpModel from "../models/otp.model.js";
 
-
 export async function register(req, res) {
 
     const { username, email, password } = req.body;

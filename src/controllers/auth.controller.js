@@ -290,7 +290,6 @@ export async function verifyEmail(req, res) {
     const user = await userModel.findByIdAndUpdate(otpDoc.user, {
         verified: true
     })
-
     await otpModel.deleteMany({
         user: otpDoc.user
     })

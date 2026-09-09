@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cookieParser());
 
-
 app.use("/api/auth", authRouter);
 
 
